@@ -1,0 +1,91 @@
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+    
+        <div class="row">
+            <!-- Coloana Stânga - Formular -->
+            <div class="col-md-6">
+                <form id="contactForm">
+                    <!-- Nume și Prenume -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nume și Prenume</label>
+                        <input type="text" class="form-control custom-gray" id="name" style="width: 300px;" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control email-box custom-gray" id="email" style="width: 300px;" required>
+                    </div>
+
+                    <!-- Servicii -->
+                    <div class="mb-3">
+                        <label for="services" class="form-label">Cu ce te putem ajuta?</label>
+                        <textarea class="form-control custom-gray" id="services" rows="4" style="width: 300px;" ></textarea>
+                    </div>
+
+                    <!-- Buton de trimitere -->
+                    <button type="submit" class="btn btn-primary" style="width: 300px;" >Trimite</button>
+                </form>
+                <p style="padding-top: 75px"> <strong>Termenul de raspuns la mesajul dvs. este de 2 zile lucratoare. </strong></p> 
+                <p>Puteti de asemenea sa ne contactati la +40 728 136 007 / office@em-security.ro</p>
+            </div>
+
+            <!-- Coloana Dreapta - Informații de Contact -->
+            <div class="col-md-6">
+                <p>Pentru mai multe informații, ne puteți contacta folosind detaliile de mai jos:</p>
+
+                <div class="contact-info p-3">
+                    <p><strong>📍 Locație:</strong> Strada Cernăuți, Numar 99, Suceava, Jud.Suceava</p>
+                    <p><strong>📞 Telefon:</strong> <a href="tel:+0728136007" style="color:white">+40 728 136 007</a></p>
+                    <p><strong>📧 Email:</strong> <a href="mailto:office@em-security.ro" style="color:white">office@em-security.ro</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async function(event) 
+        {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const services = document.getElementById("services").value;
+
+            const data = { name, email, services};
+
+            try {
+                const response = await fetch("http://localhost:5000/send-email", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data),
+                });
+
+                const result = await response.json();
+                alert(result.message);
+            } catch (error) {
+                console.error("❌ Error:", error);
+                alert("Error sending email.");
+            }
+        });
+    </script>
+</body>
+
+</html>

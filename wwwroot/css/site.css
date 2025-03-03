@@ -1,0 +1,71 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-image: url('/images/back2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+
+p, h1{
+  color: black;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* Stil pentru textul principal */
+.main-text {
+  text-align: left; /* Poziționează textul în centru */
+  margin-top: 220px; /* Adaugă spațiu de sus */
+}
+
+.info-text {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.footer-margin{
+  background-color: gray;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.custom-gray {
+  background-color: #e0e0e0 !important;
+  border: 1px solid #b0b0b0;
+  color: black;
+}
+
+.email-box {
+  width: 80%; /* 80% din container */
+  height: 40px;
+}
