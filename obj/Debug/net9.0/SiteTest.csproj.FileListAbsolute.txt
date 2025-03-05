@@ -94,6 +94,6 @@ G:\acasaw\test\SiteTest\obj\Debug\net9.0\SiteTest.genruntimeconfig.cache
 G:\acasaw\test\SiteTest\obj\Debug\net9.0\ref\SiteTest.dll
 G:\acasaw\test\SiteTest\obj\Debug\net9.0\compressed\cu5ihjngcd-572q4r98rj.gz
 G:\acasaw\test\SiteTest\obj\Debug\net9.0\compressed\49c82mll3h-572q4r98rj.gz
-G:\acasaw\test\SiteTest\obj\Debug\net9.0\compressed\3xc0a3t418-85pdtfyf4w.gz
 G:\acasaw\test\SiteTest\obj\Debug\net9.0\compressed\4r6cflbeg9-u0m18my7co.gz
 G:\acasaw\test\SiteTest\obj\Debug\net9.0\SiteTest.sourcelink.json
+G:\acasaw\test\SiteTest\obj\Debug\net9.0\compressed\3xc0a3t418-0t631itw7j.gz

@@ -25,12 +25,20 @@
       "PackagePath": "staticwebassets\\images\\back2.jpg"
     },
     {
+      "Id": "G:\\acasaw\\test\\SiteTest\\wwwroot\\images\\cercintreg.png",
+      "PackagePath": "staticwebassets\\images\\cercintreg.png"
+    },
+    {
       "Id": "G:\\acasaw\\test\\SiteTest\\wwwroot\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\images\\favicon.ico"
     },
     {
       "Id": "G:\\acasaw\\test\\SiteTest\\wwwroot\\images\\logo.jpg",
       "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "G:\\acasaw\\test\\SiteTest\\wwwroot\\images\\pozaPAZA.png",
+      "PackagePath": "staticwebassets\\images\\pozaPAZA.png"
     },
     {
       "Id": "G:\\acasaw\\test\\SiteTest\\wwwroot\\js\\site.js",
