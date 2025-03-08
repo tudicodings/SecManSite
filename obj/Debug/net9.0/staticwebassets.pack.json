@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "G:\\acasaw\\test\\SiteTest\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\SiteTest.bundle.scp.css",
-      "PackagePath": "staticwebassets\\SiteTest.572q4r98rj.bundle.scp.css"
+      "PackagePath": "staticwebassets\\SiteTest.rp2h0d146h.bundle.scp.css"
     },
     {
       "Id": "G:\\acasaw\\test\\SiteTest\\wwwroot\\css\\site.css",
@@ -11,6 +11,10 @@
     {
       "Id": "G:\\acasaw\\test\\SiteTest\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "G:\\acasaw\\test\\SiteTest\\wwwroot\\images\\BACKPOZ.png",
+      "PackagePath": "staticwebassets\\images\\BACKPOZ.png"
     },
     {
       "Id": "G:\\acasaw\\test\\SiteTest\\wwwroot\\images\\back-home.jpg",
