@@ -8,7 +8,14 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+    origin: "https://security-management-tst.azurewebsites.net",
+    methods: "POST",
+    allowedHeaders: ["Content-Type"]
+};
+
+app.use(cors(corsOptions));
+
 app.use(bodyParser.json());
 const helmet = require("helmet");
 app.use(helmet());
@@ -77,4 +84,6 @@ app.post("/send-oferta", async (req, res) => {
 });
 
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
