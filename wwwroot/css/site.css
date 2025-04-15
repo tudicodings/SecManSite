@@ -15,11 +15,11 @@ html {
 }
 
 body {
-  background-image: url('/images/back2.jpg');
-  background-size: cover;
+  background-color:gray;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 60px;
+  margin-bottom: 10%;
   margin: 0;
   padding: 0;
 }
@@ -39,15 +39,15 @@ p, h1{
   text-align: start;
 }
 
-/* Stil pentru textul principal */
+
 .main-text {
-  text-align: left; /* Poziționează textul în centru */
-  margin-top: 220px; /* Adaugă spațiu de sus */
+  text-align: left; 
+  margin-top: 25%;
 }
 
 .info-text {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 5%;
 }
 
 .footer-margin{
@@ -66,15 +66,15 @@ p, h1{
 }
 
 .email-box {
-  width: 80%; /* 80% din container */
+  width: 80%; 
   height: 40px;
 }
 
 .flip-container{
   justify-content: space-between;
   perspective: 1000px;
-  width: 450px;
-  height: 450px;
+  width: 15%;
+  height: 15%;
 }
 
 .flipper{
@@ -140,4 +140,133 @@ p, h1{
 
 .info-oferta{
   margin-top: 1px;
+}
+
+/* 📱 Telefoane mici (max-width: 576px) */
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+
+  .main-text {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .container-inline,
+  .container-inline-oferta {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10%;
+  }
+
+  .flip-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .email-box {
+    width: 100%;
+  }
+
+  .button-oferta {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-margin {
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .last-text {
+    margin-bottom: 80px; 
+  }
+}
+
+/* 📟 Tablete (576px - 1024px) */
+@media (min-width: 576px) and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+
+  .main-text {
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .container-inline,
+  .container-inline-oferta {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+  }
+
+  .flip-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .email-box {
+    width: 90%;
+  }
+
+  .button-oferta {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .footer-margin {
+    height: 55px;
+    font-size: 14px;
+  }
+  
+}
+
+/* 🖥️ Desktop (peste 1024px) */
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  .main-text {
+    text-align: left;
+    margin-top: 220px;
+  }
+
+  .container-inline {
+    flex-direction: row;
+    gap: 220px;
+  }
+
+  .container-inline-oferta {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .flip-container {
+    width: 450px;
+    height: 450px;
+  }
+
+  .email-box {
+    width: 80%;
+  }
+
+  .button-oferta {
+    margin-left: 190px;
+    margin-top: 20px;
+  }
+
+  .footer-margin {
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hidden-on-mobile {
+    display: none;
+  }
 }

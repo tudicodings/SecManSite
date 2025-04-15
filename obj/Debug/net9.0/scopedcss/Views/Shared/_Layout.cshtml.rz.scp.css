@@ -7,6 +7,7 @@ a.navbar-brand[b-f950mfbmdf] {
   word-break: break-all;
 }
 
+
 a[b-f950mfbmdf] {
   color: #0077cc;
 }
@@ -40,11 +41,11 @@ button.accept-policy[b-f950mfbmdf] {
 }
 
 .footer[b-f950mfbmdf] {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px;
+  line-height: 35px;
 }
 
 .navbar-nav[b-f950mfbmdf] {
